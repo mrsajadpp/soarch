@@ -1,0 +1,122 @@
+.mainContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-family: "Ahrefs";
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  flex: 1;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+.policyContainer {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.policyContainer h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.lastUpdated {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.policyContainer section {
+  margin-bottom: 2rem;
+}
+
+.policyContainer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.policyContainer p {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.policyContainer ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.policyContainer li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.policyContainer a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: white !important;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+.backButton:hover {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 1rem;
+  }
+
+  .policyContainer {
+    padding: 1.5rem;
+  }
+
+  .policyContainer h1 {
+    font-size: 1.75rem;
+  }
+
+  .policyContainer h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .policyContainer {
+    padding: 1rem;
+  }
+
+  .policyContainer h1 {
+    font-size: 1.5rem;
+  }
+}
