@@ -1,26 +1,20 @@
-import type { Metadata } from 'next'
-import HomePage from './components/HomePage'
+import type { Metadata } from "next";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: 'VerifEye - AI-Powered News Fact Checking Tool',
-  description: 'Instant fact-checking for Malayalam and Indian news using advanced AI. Verify news authenticity, detect fake news, and get accurate information analysis for Malayalam news, Indian media, and more.',
-  keywords: 'malayalam news fact checking, news fact checking, indian ai, fake news detection, news verification tool, malayalam news verification, indian news fact checker',
-  openGraph: {
-    title: 'VerifEye - AI News Fact Checking',
-    description: 'Instant fact-checking for Malayalam and Indian news using advanced AI technology.',
-    images: ['/og-image.png'],
-    url: 'https://verifeye.grovixlab.com/',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@grovixlab',
-  },
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
-  },
-}
+  title: "Search Page",
+  description: "A simple responsive search page",
+};
 
 export default function Page() {
-  return <HomePage />
+  return (
+    <div className={styles.container}>
+      <img src="https://i.postimg.cc/PJsVf5X1/soarch.png" alt="Logo" className={styles.logo} />
+
+      <form className={styles.searchBox} action="/search" method="get">
+        <input type="text" placeholder="Search..." name="q" className={styles.searchInput} />
+        <button type="submit" className={styles.searchButton}>Search</button>
+      </form>
+    </div>
+  );
 }
