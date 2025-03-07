@@ -64,7 +64,7 @@ export default function SearchPage() {
       <img src="https://i.postimg.cc/PJsVf5X1/soarch.png" alt="Logo" className={styles.logo} />
 
       {/* Search Bar */}
-      <form onSubmit={handleSearch} className={styles.searchBox}>
+      <form onSubmit={handleSearch} className={styles.searchBox} >
         <input
           type="text"
           value={searchTerm}
