@@ -5,6 +5,7 @@ const express = require("express");
 const morgan = require("morgan");
 const colors = require('colors');
 const UAParser = require('ua-parser-js');
+const scrapeData = require("./scripts/scrape_data");
 const cors = require('cors');
 const compression = require('compression');
 const connectDB = require("./data/config");

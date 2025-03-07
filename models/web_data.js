@@ -19,8 +19,14 @@ const webDataSchema = new mongoose.Schema({
     url: {
         type: String,
         required: [true, 'URL is required'],
-        trim: true
+        trim: true,
+        unique: true
     },
+    internal_links: [{
+        type: String,
+        required: [true, 'URL is required'],
+        trim: true
+    }],
     timestamp: {
         type: Date,
         default: Date.now
