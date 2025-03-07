@@ -61,7 +61,7 @@ export default function SearchPage() {
   return (
     <div className={styles.container}>
       {/* Logo */}
-      <img src="/logo.png" alt="Logo" className={styles.logo} />
+      <img src="https://i.postimg.cc/PJsVf5X1/soarch.png" alt="Logo" className={styles.logo} />
 
       {/* Search Bar */}
       <form onSubmit={handleSearch} className={styles.searchBox}>
